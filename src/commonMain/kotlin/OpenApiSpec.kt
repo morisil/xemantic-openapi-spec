@@ -21,7 +21,7 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
 private val openApiJson = Json {
-    ignoreUnknownKeys = true
+    ignoreUnknownKeys = true // should be removed once implementation is finished
 }
 
 public fun decodeOpenApiSpec(
