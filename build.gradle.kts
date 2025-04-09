@@ -20,14 +20,13 @@ plugins {
     signing
     alias(libs.plugins.jreleaser)
     alias(libs.plugins.xemantic.conventions)
+    alias(libs.plugins.kotlin.plugin.serialization)
 }
 
-// TODO change the group
-group = "com.xemantic.template"
+group = "com.xemantic.openapi"
 
-// TODO fill up the details
 xemantic {
-    description = "A template repository for Xemantic's Kotlin multiplatform projects"
+    description = "The OpenAPI Specification parser (Kotlin multiplatform)"
     inceptionYear = 2025
     license = License.APACHE
     developer(
@@ -56,7 +55,6 @@ repositories {
 
 kotlin {
 
-    // TODO remove for a non-library project
     explicitApi()
 
     compilerOptions {
@@ -81,7 +79,6 @@ kotlin {
     js {
         browser()
         nodejs()
-        // TODO remove for a non-library project
         binaries.library()
     }
 
@@ -89,13 +86,11 @@ kotlin {
         browser()
         nodejs()
         //d8()
-        // TODO remove for a non-library project
         binaries.library()
     }
 
     wasmWasi {
         nodejs()
-        // TODO remove for a non-library project
         binaries.library()
     }
 
@@ -130,6 +125,13 @@ kotlin {
     swiftExport {}
 
     sourceSets {
+
+        commonMain {
+            dependencies {
+                implementation(libs.kotlinx.serialization.json)
+                implementation(libs.xemantic.ai.tool.schema)
+            }
+        }
 
         commonTest {
             dependencies {

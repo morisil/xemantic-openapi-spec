@@ -1,0 +1,100 @@
+public final class com/xemantic/openapi/spec/Components {
+	public static final field Companion Lcom/xemantic/openapi/spec/Components$Companion;
+	public synthetic fun <init> (Ljava/util/Map;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getSchemas ()Ljava/util/Map;
+}
+
+public synthetic class com/xemantic/openapi/spec/Components$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/xemantic/openapi/spec/Components$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/xemantic/openapi/spec/Components;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/xemantic/openapi/spec/Components;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/xemantic/openapi/spec/Components$Builder {
+	public fun <init> ()V
+	public final fun build ()Lcom/xemantic/openapi/spec/Components;
+	public final fun getSchemas ()Ljava/util/Map;
+	public final fun setSchemas (Ljava/util/Map;)V
+}
+
+public final class com/xemantic/openapi/spec/Components$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/xemantic/openapi/spec/Info {
+	public static final field Companion Lcom/xemantic/openapi/spec/Info$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getDescription ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public final fun getVersion ()Ljava/lang/String;
+}
+
+public synthetic class com/xemantic/openapi/spec/Info$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/xemantic/openapi/spec/Info$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/xemantic/openapi/spec/Info;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/xemantic/openapi/spec/Info;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/xemantic/openapi/spec/Info$Builder {
+	public fun <init> ()V
+	public final fun build ()Lcom/xemantic/openapi/spec/Info;
+	public final fun getDescription ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public final fun getVersion ()Ljava/lang/String;
+	public final fun setDescription (Ljava/lang/String;)V
+	public final fun setTitle (Ljava/lang/String;)V
+	public final fun setVersion (Ljava/lang/String;)V
+}
+
+public final class com/xemantic/openapi/spec/Info$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/xemantic/openapi/spec/OpenApiSpec {
+	public static final field Companion Lcom/xemantic/openapi/spec/OpenApiSpec$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Lcom/xemantic/openapi/spec/Info;Lcom/xemantic/openapi/spec/Components;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getComponents ()Lcom/xemantic/openapi/spec/Components;
+	public final fun getInfo ()Lcom/xemantic/openapi/spec/Info;
+	public final fun getOpenapi ()Ljava/lang/String;
+}
+
+public synthetic class com/xemantic/openapi/spec/OpenApiSpec$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/xemantic/openapi/spec/OpenApiSpec$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/xemantic/openapi/spec/OpenApiSpec;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/xemantic/openapi/spec/OpenApiSpec;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/xemantic/openapi/spec/OpenApiSpec$Builder {
+	public fun <init> ()V
+	public final fun build ()Lcom/xemantic/openapi/spec/OpenApiSpec;
+	public final fun getComponents ()Lcom/xemantic/openapi/spec/Components;
+	public final fun getInfo ()Lcom/xemantic/openapi/spec/Info;
+	public final fun getOpenapi ()Ljava/lang/String;
+	public final fun setComponents (Lcom/xemantic/openapi/spec/Components;)V
+	public final fun setInfo (Lcom/xemantic/openapi/spec/Info;)V
+	public final fun setOpenapi (Ljava/lang/String;)V
+}
+
+public final class com/xemantic/openapi/spec/OpenApiSpec$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/xemantic/openapi/spec/OpenApiSpecKt {
+	public static final fun Components (Lkotlin/jvm/functions/Function1;)Lcom/xemantic/openapi/spec/Components;
+	public static final fun Info (Lkotlin/jvm/functions/Function1;)Lcom/xemantic/openapi/spec/Info;
+	public static final fun OpenApiSpec (Lkotlin/jvm/functions/Function1;)Lcom/xemantic/openapi/spec/OpenApiSpec;
+	public static final fun decodeOpenApiSpec (Ljava/lang/String;)Lcom/xemantic/openapi/spec/OpenApiSpec;
+}
+
